@@ -1,0 +1,158 @@
+<!-- Osmos File Upload Button -->
+<!-- See this link for more docs. https://docs.osmos.io/osmos-uploader/webpage-integration -->
+<script src="https://cdn.osmos.io/button/embed/v1/OsmosButton.js"></script>
+<script>
+  Osmos.configure({
+  schema: {
+    fields: [
+      {
+        name: "ClientExternalId",
+        displayName: "ClientExternalId",
+        description: "<Your field description here>"
+      },
+      {
+        name: "LastName",
+        displayName: "LastName",
+        description: "<Your field description here>"
+      },
+      {
+        name: "FirstName",
+        displayName: "FirstName",
+        description: "<Your field description here>"
+      },
+      {
+        name: "Address1",
+        displayName: "Address1",
+        description: "<Your field description here>"
+      },
+      {
+        name: "Address2",
+        displayName: "Address2",
+        description: "<Your field description here>"
+      },
+      {
+        name: "City",
+        displayName: "City",
+        description: "<Your field description here>"
+      },
+      {
+        name: "State",
+        displayName: "State",
+        description: "<Your field description here>"
+      },
+      {
+        name: "ZipCode",
+        displayName: "ZipCode",
+        description: "<Your field description here>"
+      },
+      {
+        name: "Country",
+        displayName: "Country",
+        description: "<Your field description here>"
+      },
+      {
+        name: "HomePhone",
+        displayName: "HomePhone",
+        description: "<Your field description here>"
+      },
+      {
+        name: "BusinessPhone",
+        displayName: "BusinessPhone",
+        description: "<Your field description here>"
+      },
+      {
+        name: "BusinessPhoneExt",
+        displayName: "BusinessPhoneExt",
+        description: "<Your field description here>"
+      },
+      {
+        name: "FaxPhone",
+        displayName: "FaxPhone",
+        description: "<Your field description here>"
+      },
+      {
+        name: "CellPhone",
+        displayName: "CellPhone",
+        description: "<Your field description here>"
+      },
+      {
+        name: "IsSMSCommOptedIn",
+        displayName: "IsSMSCommOptedIn",
+        description: "<Your field description here>"
+      },
+      {
+        name: "ClientFirstVisitDate",
+        displayName: "ClientFirstVisitDate",
+        description: "<Your field description here>"
+      },
+      {
+        name: "ClientLastVisitDate",
+        displayName: "ClientLastVisitDate",
+        description: "<Your field description here>"
+      },
+      {
+        name: "Birthday",
+        displayName: "Birthday",
+        description: "<Your field description here>"
+      },
+      {
+        name: "Gender",
+        displayName: "Gender",
+        description: "<Your field description here>"
+      },
+      {
+        name: "IsClientActive",
+        displayName: "IsClientActive",
+        description: "<Your field description here>"
+      },
+      {
+        name: "DeletedDate",
+        displayName: "DeletedDate",
+        description: "<Your field description here>"
+      },
+      {
+        name: "EmailAddress",
+        displayName: "EmailAddress",
+        description: "<Your field description here>"
+      },
+      {
+        name: "IsEmailCommOptedIn",
+        displayName: "IsEmailCommOptedIn",
+        description: "<Your field description here>"
+      },
+      {
+        name: "ClientNote",
+        displayName: "ClientNote",
+        description: "<Your field description here>"
+      },
+      {
+        name: "LocationId",
+        displayName: "LocationId",
+        description: "<Your field description here>"
+      }
+    ]
+  },
+  token: "tsckgc7-vlspgdwcsr8rsdjm20xsata3qkzeyy0eno-rnfygi",
+  uploadDescription: "<Include a description of your uploader upload here which will be shown to users that click the uploader>",
+  
+
+  // Set to false to show the schema for the destination connector in the uploader on the file upload screen.
+  hideUploadSchema: true,
+
+  // Set to false to show the uploader description on the file upload screen.
+  hideUploadDescription: true,
+
+  // Set to false to show the advanced version of the uploader, with formulas, SmartFill, and QuickFixes.
+  disableAdvancedMode: true,
+
+  // Maximum number of records from the uploaded file to display in the User Interface.
+ // This value is capped at 100,000 and higher values will default back to 100,000.
+  // Can be lowered to increase performance when using expensive validators.
+  maxRecords: 100000,
+
+});
+</script>
+<button class="ftl-button" onclick="Osmos.handleClick('tsckgc7-vlspgdwcsr8rsdjm20xsata3qkzeyy0eno-rnfygi')">
+  Upload Your Data
+</button>
+<!-- End Osmos File Upload Button -->
